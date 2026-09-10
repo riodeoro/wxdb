@@ -89,11 +89,43 @@
     </div>
 
   </div>
+
+  <div class="wx-card tr-search">
+    <span id="tr-spin-search" class="tr-spin"></span>
+    <div class="tr-card-controls">
+      <div class="wx-control">
+        <label for="tr-s-fc">Search fire centres</label>
+        <select id="tr-s-fc"><option value="">All fire centres</option></select>
+      </div>
+      <div class="wx-control">
+        <label for="tr-s-from">From year</label>
+        <select id="tr-s-from"></select>
+      </div>
+      <div class="wx-control">
+        <label for="tr-s-to">To year</label>
+        <select id="tr-s-to"></select>
+      </div>
+    </div>
+    <div class="tr-s-title">Conditions</div>
+    <div id="tr-s-conds" class="tr-s-conds"></div>
+    <div class="tr-s-actions">
+      <button type="button" id="tr-s-add">Add condition</button>
+      <button type="button" id="tr-s-run" disabled>Search</button>
+      <span id="tr-s-status" class="tr-s-status" aria-live="polite"></span>
+    </div>
+    <div class="tr-table-wrap tr-s-results">
+      <table id="tr-s-table" class="tr-table">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
 </div>
 
 <span id="tr-timing-diag" hidden></span>
 <div id="tr-detail-chart-container"></div>
 
 <script type="module" src="app.js"></script>
+<script type="module" src="search.js"></script>
 </body>
 </html>
